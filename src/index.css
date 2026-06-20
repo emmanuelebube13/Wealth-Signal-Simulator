@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-theme-base: var(--bg-base);
+  --color-theme-card: var(--bg-card);
+  --color-theme-body: var(--text-body);
+  --color-theme-muted: var(--text-muted);
+  --color-theme-border: var(--border-color);
+  --color-theme-accent: var(--color-accent);
+  --color-theme-hover: var(--color-hover);
+}
+
+:root {
+  --bg-base: #FAF7F0;
+  --bg-card: #FFFFFF;
+  --text-body: #172554;
+  --text-muted: #64748B;
+  --border-color: #E2E8F0;
+  --color-accent: #2DD4BF;
+  --color-hover: #115E59; 
+}
+
+.dark {
+  --bg-base: #10162B;
+  --bg-card: #1B2340;
+  --text-body: #F1EDE4;
+  --text-muted: #94A3B8;
+  --border-color: #2E3856;
+  --color-accent: #2DD4BF;
+  --color-hover: #134E4A;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+input[type=range]::-moz-range-thumb {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  cursor: pointer;
+  border: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: var(--border-color);
+  border-radius: 2px;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: var(--border-color);
+  border-radius: 2px;
+}

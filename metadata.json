@@ -1,0 +1,8 @@
+{
+  "name": "Wealth Signal Simulator",
+  "description": "Educational simulator demonstrating how non-traditional data signals (satellite, mobile, etc.) are combined to estimate relative wealth for humanitarian targeting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
